@@ -1278,3 +1278,4 @@ int __sys_getsockopt(int fd, int level, int optname, char __user *optval,
 int __sys_setsockopt(int fd, int level, int optname, char __user *optval,
 		int optlen);
 #endif
+asmlinkage long sys_listProcessInfo(long pid, const char __user *buf, int size);
