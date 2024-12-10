@@ -4,23 +4,6 @@
 #include <linux/syscalls.h>
 #include "processInfo.h"
 
-asmlinkage long sys_listProcessWaiting(){
-	/* 
-	 * i) lista os processos em espera
-	 * ii) o processo superior ao parametro limit_age é finalizado
-	 * iii) lista os processos finalizados
-	 * *************************************/
-
-	//verifique se o estado dele é TASK_RUNNING (em execução), TASK_INTERRUPTIBLE (processo do usuário em sleep).
-}
-
-asmlinkage long sys_listProcessRun(){
-	/*
-	 *  i) lista os processos em execução
-	 *  ii) !avaliar viabilidade de preemptivamente retirar um processo da cpu
-	 * */
-}
-    
 asmlinkage long sys_listProcessInfo(long pid, const char __user *buf, int size) {
   struct task_struct *proces;
   unsigned char kbuf[256];
