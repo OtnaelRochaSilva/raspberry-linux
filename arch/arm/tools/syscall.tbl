@@ -467,3 +467,4 @@
 451	common	cachestat			sys_cachestat
 452	common	fchmodat2			sys_fchmodat2
 453 	common  listProcessInfo     		sys_listProcessInfo
+454	common	set_gpio_irq			sys_set_gpio_irq
